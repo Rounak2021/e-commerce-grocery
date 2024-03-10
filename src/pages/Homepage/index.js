@@ -11,6 +11,13 @@ const Homepage = () => {
     const handleRegister = () => {
         navigate("/register")
     }
+    const handleUserDetails = () => {
+        navigate("/user-info")
+    }
+    const handleApplicationForm = () => {
+        navigate("/application-form")
+    }
+    
     return (
         <div  >
             <main className="relative h-screen overflow-hidden bg-white dark:bg-gray-800" >
@@ -21,6 +28,13 @@ const Homepage = () => {
                         </div>
                         <div className="flex items-center">
                             <nav className="items-center hidden text-lg text-gray-800 uppercase font-sen dark:text-white lg:flex">
+                                <button onClick={() => handleUserDetails()} className="flex px-6 py-2">
+                                    User Information
+                                </button>
+                                <button onClick={() => handleApplicationForm()} className="flex px-6 py-2">
+                                    Application Form
+                                </button>
+
                                 <button className="flex px-6 py-2">
                                     Admin
                                 </button>
@@ -30,6 +44,7 @@ const Homepage = () => {
                                 <button onClick={() => handleRegister()} className="flex px-6 py-2">
                                     Signup
                                 </button>
+
                                 {/* <a href="#" className="flex px-6 py-2">
                                     Contact
                                 </a>

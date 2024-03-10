@@ -5,6 +5,8 @@ import Dashboard from './pages/Dashboard';
 import Homepage from './pages/Homepage';
 import Register from './pages/Signup';
 import Login from './pages/Login';
+import SubmissionForm from './pages/Forms/SingupDetails';
+import ApplicationForm from './pages/Forms/ApplicationForm';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/user-info" element={<SubmissionForm />} />
+          <Route path="/application-form" element={<ApplicationForm />} />
         </Routes>
       </div>
     </BrowserRouter>
